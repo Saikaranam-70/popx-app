@@ -1,22 +1,32 @@
 .phone-frame {
-  width: 390px;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
   background: #ffffff;
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-@media (max-width: 480px) {
-  body { background: #ffffff; }
-  .phone-frame {
-    width: 100vw;
-    min-height: 100vh;
-  }
+  overflow: hidden;
 }
 
 @media (min-width: 481px) {
+  body {
+    background: #f0f0f5 !important;
+    overflow: auto !important;
+    position: static !important;
+  }
+  #root {
+    overflow: auto !important;
+    position: static !important;
+    min-height: 100vh;
+  }
   .phone-frame {
+    width: 390px;
+    height: 780px;
     min-height: 780px;
+    border-radius: 0;
     box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+    overflow-y: auto;
+    margin: 40px auto;
   }
 }

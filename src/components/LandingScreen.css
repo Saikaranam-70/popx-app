@@ -1,19 +1,20 @@
 .landing-screen {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-height: 780px;
+  width: 100%;
+  height: 100%;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .landing-top {
   flex: 1;
   background: #ffffff;
-  min-height: 300px;
 }
 
 .landing-bottom {
   padding: 28px 24px 48px;
+  flex-shrink: 0;
 }
 
 .landing-title {
@@ -69,7 +70,3 @@
 }
 
 .btn-secondary-purple:hover { background: #c9b0ee; }
-
-@media (max-width: 480px) {
-  .landing-screen { min-height: 100vh; }
-}

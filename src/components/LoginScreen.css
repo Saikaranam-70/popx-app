@@ -1,10 +1,12 @@
 .login-screen {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-height: 780px;
+  width: 100%;
+  height: 100%;
   padding: 44px 24px 40px;
   background: #ffffff;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .page-title {
@@ -23,7 +25,6 @@
   margin-bottom: 32px;
 }
 
-/* Floating label input */
 .field-group {
   position: relative;
   margin-bottom: 24px;
@@ -55,13 +56,8 @@
   transition: border-color 0.2s;
 }
 
-.field-group input::placeholder {
-  color: #b0b0b0;
-}
-
-.field-group input:focus {
-  border-color: #6c3ce1;
-}
+.field-group input::placeholder { color: #b0b0b0; }
+.field-group input:focus { border-color: #6c3ce1; }
 
 .spacer { flex: 1; }
 
@@ -75,21 +71,9 @@
   width: 100%;
   cursor: pointer;
   transition: background 0.2s;
-  letter-spacing: 0.01em;
+  flex-shrink: 0;
 }
 
-.submit-btn.active {
-  background: #6c3ce1;
-  color: #ffffff;
-}
+.submit-btn.active { background: #6c3ce1; color: #ffffff; }
 .submit-btn.active:hover { background: #5a2ec7; }
-
-.submit-btn.disabled {
-  background: #c8c8c8;
-  color: #ffffff;
-  cursor: not-allowed;
-}
-
-@media (max-width: 480px) {
-  .login-screen { min-height: 100vh; }
-}
+.submit-btn.disabled { background: #c8c8c8; color: #ffffff; cursor: not-allowed; }
