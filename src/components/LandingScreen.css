@@ -1,0 +1,74 @@
+.landing-screen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 700px;
+}
+
+.landing-top {
+  flex: 1;
+  background: #ffffff;
+}
+
+.landing-bottom {
+  padding: 28px 28px 40px;
+}
+
+.landing-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.landing-subtitle {
+  color: #888888;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.btn-primary-purple {
+  background: #6c2bd9;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-primary-purple:hover {
+  background: #5a22b8;
+}
+
+.btn-primary-purple:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary-purple {
+  background: #d6bbf7;
+  color: #333333;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-secondary-purple:hover {
+  background: #c3a0f0;
+}

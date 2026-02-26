@@ -1,0 +1,106 @@
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 700px;
+  padding: 40px 28px 32px;
+}
+
+/* ── Shared across screens ── */
+.back-btn {
+  background: none;
+  border: none;
+  color: #6c2bd9;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.back-btn:hover {
+  color: #4a1a9c;
+}
+
+.page-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 1.75rem;
+  color: #111111;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: #888888;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.field-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.field-group label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: #ffffff;
+  padding: 0 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #6c2bd9;
+  z-index: 1;
+}
+
+.field-group input {
+  width: 100%;
+  border: 1.5px solid #dddddd;
+  border-radius: 8px;
+  padding: 14px 14px;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  background: #fafafa;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.field-group input:focus {
+  border-color: #6c2bd9;
+  background: #ffffff;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn.active {
+  background: #6c2bd9;
+  color: #ffffff;
+}
+
+.submit-btn.active:hover {
+  background: #5a22b8;
+}
+
+.submit-btn.disabled {
+  background: #cccccc;
+  color: #ffffff;
+  cursor: not-allowed;
+}

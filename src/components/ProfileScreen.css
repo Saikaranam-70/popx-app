@@ -1,0 +1,79 @@
+.profile-screen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 700px;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, #6c2bd9 0%, #9b59b6 100%);
+  padding: 48px 28px 32px;
+  color: #ffffff;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #e6b800;
+  color: #ffffff;
+  font-family: 'Sora', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  border: 3px solid rgba(255, 255, 255, 0.35);
+}
+
+.profile-name {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.profile-email {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-body {
+  padding: 28px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.profile-bio {
+  background: #f7f7fb;
+  border-radius: 12px;
+  padding: 16px;
+  color: #555555;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  border-left: 4px solid #6c2bd9;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
+}
+
+.btn-back-home {
+  background: #f0eaff;
+  color: #6c2bd9;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-back-home:hover {
+  background: #e0d0ff;
+}
