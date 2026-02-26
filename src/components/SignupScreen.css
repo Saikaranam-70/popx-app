@@ -2,63 +2,65 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-height: 700px;
-  padding: 40px 28px 32px;
+  min-height: 780px;
+  padding: 44px 24px 40px;
+  background: #ffffff;
   overflow-y: auto;
 }
 
 .radio-group {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .radio-label {
-  font-size: 0.92rem;
-  color: #444444;
-  margin-bottom: 10px;
+  font-size: 0.88rem;
+  color: #555555;
+  margin-bottom: 12px;
   font-family: 'Inter', sans-serif;
 }
 
 .radio-options {
   display: flex;
-  gap: 28px;
+  gap: 32px;
+  align-items: center;
 }
 
 .radio-options label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
   cursor: pointer;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: #333333;
   font-family: 'Inter', sans-serif;
 }
 
 .radio-options input[type='radio'] {
-  accent-color: #6c2bd9;
-  width: 18px;
-  height: 18px;
+  accent-color: #6c3ce1;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
 .btn-create {
-  background: #6c2bd9;
+  background: #6c3ce1;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
-  padding: 16px;
-  font-family: 'Sora', sans-serif;
+  border-radius: 6px;
+  padding: 17px;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   width: 100%;
   cursor: pointer;
   margin-top: auto;
-  transition: background 0.2s ease, transform 0.1s ease;
+  transition: background 0.2s;
+  letter-spacing: 0.01em;
 }
 
-.btn-create:hover {
-  background: #5a22b8;
-}
+.btn-create:hover { background: #5a2ec7; }
+.btn-create:active { opacity: 0.92; }
 
-.btn-create:active {
-  transform: scale(0.98);
+@media (max-width: 480px) {
+  .signup-screen { min-height: 100vh; }
 }

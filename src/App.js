@@ -42,10 +42,7 @@ function App() {
         />
       )}
       {screen === 'profile' && (
-        <ProfileScreen
-          userData={userData}
-          onBack={() => navigate('landing')}
-        />
+        <ProfileScreen userData={userData} />
       )}
     </div>
   );

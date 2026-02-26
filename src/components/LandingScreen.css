@@ -2,73 +2,74 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-height: 700px;
+  min-height: 780px;
+  background: #ffffff;
 }
 
 .landing-top {
   flex: 1;
   background: #ffffff;
+  min-height: 300px;
 }
 
 .landing-bottom {
-  padding: 28px 28px 40px;
+  padding: 28px 24px 48px;
 }
 
 .landing-title {
   font-family: 'Sora', sans-serif;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: #111111;
   margin-bottom: 10px;
 }
 
 .landing-subtitle {
-  color: #888888;
-  font-size: 0.95rem;
+  color: #8a8a8a;
+  font-size: 0.92rem;
   line-height: 1.6;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .btn-primary-purple {
-  background: #6c2bd9;
+  background: #6c3ce1;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
-  padding: 16px;
-  font-family: 'Sora', sans-serif;
+  border-radius: 6px;
+  padding: 17px;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.1s ease;
+  width: 100%;
   display: block;
   text-align: center;
-  width: 100%;
+  transition: background 0.2s;
+  letter-spacing: 0.01em;
 }
 
-.btn-primary-purple:hover {
-  background: #5a22b8;
-}
-
-.btn-primary-purple:active {
-  transform: scale(0.98);
-}
+.btn-primary-purple:hover { background: #5a2ec7; }
+.btn-primary-purple:active { opacity: 0.92; }
 
 .btn-secondary-purple {
-  background: #d6bbf7;
+  background: #d9c8f5;
   color: #333333;
   border: none;
-  border-radius: 8px;
-  padding: 16px;
-  font-family: 'Sora', sans-serif;
+  border-radius: 6px;
+  padding: 17px;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  width: 100%;
   display: block;
   text-align: center;
-  width: 100%;
+  margin-top: 14px;
+  transition: background 0.2s;
 }
 
-.btn-secondary-purple:hover {
-  background: #c3a0f0;
+.btn-secondary-purple:hover { background: #c9b0ee; }
+
+@media (max-width: 480px) {
+  .landing-screen { min-height: 100vh; }
 }

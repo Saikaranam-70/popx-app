@@ -25,14 +25,12 @@ function SignupScreen({ onBack, onSignup }) {
 
   return (
     <div className="signup-screen">
-      <button className="back-btn" onClick={onBack}>&#8592; Back</button>
-
       <h1 className="page-title">
         Create your<br />PopX account
       </h1>
 
       <div className="field-group">
-        <label>Full Name *</label>
+        <label>Full Name*</label>
         <input
           type="text"
           placeholder="Marry Doe"
@@ -42,7 +40,7 @@ function SignupScreen({ onBack, onSignup }) {
       </div>
 
       <div className="field-group">
-        <label>Phone number *</label>
+        <label>Phone number*</label>
         <input
           type="tel"
           placeholder="+91 9000000000"
@@ -52,7 +50,7 @@ function SignupScreen({ onBack, onSignup }) {
       </div>
 
       <div className="field-group">
-        <label>Email address *</label>
+        <label>Email address*</label>
         <input
           type="email"
           placeholder="marry@example.com"
@@ -82,7 +80,7 @@ function SignupScreen({ onBack, onSignup }) {
       </div>
 
       <div className="radio-group">
-        <p className="radio-label">Are you an Agency? *</p>
+        <p className="radio-label">Are you an Agency?*</p>
         <div className="radio-options">
           <label>
             <input

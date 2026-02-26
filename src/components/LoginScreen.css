@@ -2,25 +2,9 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-height: 700px;
-  padding: 40px 28px 32px;
-}
-
-/* ── Shared across screens ── */
-.back-btn {
-  background: none;
-  border: none;
-  color: #6c2bd9;
-  font-size: 1rem;
-  font-family: 'Inter', sans-serif;
-  cursor: pointer;
-  padding: 0;
-  margin-bottom: 24px;
-  display: inline-block;
-}
-
-.back-btn:hover {
-  color: #4a1a9c;
+  min-height: 780px;
+  padding: 44px 24px 40px;
+  background: #ffffff;
 }
 
 .page-title {
@@ -33,15 +17,16 @@
 }
 
 .page-subtitle {
-  color: #888888;
+  color: #8a8a8a;
   font-size: 0.9rem;
   line-height: 1.6;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
+/* Floating label input */
 .field-group {
   position: relative;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .field-group label {
@@ -49,58 +34,62 @@
   top: -10px;
   left: 12px;
   background: #ffffff;
-  padding: 0 4px;
+  padding: 0 5px;
   font-size: 0.78rem;
   font-weight: 600;
-  color: #6c2bd9;
+  color: #6c3ce1;
   z-index: 1;
+  pointer-events: none;
 }
 
 .field-group input {
   width: 100%;
-  border: 1.5px solid #dddddd;
-  border-radius: 8px;
-  padding: 14px 14px;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 15px 14px;
   font-size: 0.95rem;
   color: #333333;
   outline: none;
-  background: #fafafa;
+  background: #ffffff;
   font-family: 'Inter', sans-serif;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s;
+}
+
+.field-group input::placeholder {
+  color: #b0b0b0;
 }
 
 .field-group input:focus {
-  border-color: #6c2bd9;
-  background: #ffffff;
+  border-color: #6c3ce1;
 }
 
-.spacer {
-  flex: 1;
-}
+.spacer { flex: 1; }
 
 .submit-btn {
   border: none;
-  border-radius: 8px;
-  padding: 16px;
-  font-family: 'Sora', sans-serif;
+  border-radius: 6px;
+  padding: 17px;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   width: 100%;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s;
+  letter-spacing: 0.01em;
 }
 
 .submit-btn.active {
-  background: #6c2bd9;
+  background: #6c3ce1;
   color: #ffffff;
 }
-
-.submit-btn.active:hover {
-  background: #5a22b8;
-}
+.submit-btn.active:hover { background: #5a2ec7; }
 
 .submit-btn.disabled {
-  background: #cccccc;
+  background: #c8c8c8;
   color: #ffffff;
   cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .login-screen { min-height: 100vh; }
 }

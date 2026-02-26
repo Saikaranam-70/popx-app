@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './LoginScreen.css';
 
 function LoginScreen({ onBack, onLogin }) {
-  const [email, setEmail]       = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const isReady = email.trim() !== '' && password.trim() !== '';
@@ -14,8 +14,6 @@ function LoginScreen({ onBack, onLogin }) {
 
   return (
     <div className="login-screen">
-      <button className="back-btn" onClick={onBack}>&#8592; Back</button>
-
       <h1 className="page-title">
         Signin to your<br />PopX account
       </h1>
