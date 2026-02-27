@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LandingScreen.css';
 
-function LandingScreen({ onCreateAccount, onLogin }) {
+function LandingScreen() {
+  const navigate = useNavigate();
+
   return (
     <div className="landing-screen">
       <div className="landing-top" />
@@ -11,10 +14,10 @@ function LandingScreen({ onCreateAccount, onLogin }) {
           Lorem ipsum dolor sit amet,<br />
           consectetur adipiscing elit.
         </p>
-        <button className="btn-primary-purple" onClick={onCreateAccount}>
+        <button className="btn-primary-purple" onClick={() => navigate('/signup')}>
           Create Account
         </button>
-        <button className="btn-secondary-purple" onClick={onLogin}>
+        <button className="btn-secondary-purple" onClick={() => navigate('/login')}>
           Already Registered? Login
         </button>
       </div>

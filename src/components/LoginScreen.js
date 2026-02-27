@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LoginScreen.css';
 
-function LoginScreen({ onBack, onLogin }) {
+function LoginScreen({ onLogin }) {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -10,6 +12,7 @@ function LoginScreen({ onBack, onLogin }) {
   const handleSubmit = () => {
     if (!isReady) return;
     onLogin(email.trim());
+    navigate('/profile');
   };
 
   return (

@@ -18,12 +18,10 @@ function ProfileScreen({ userData }) {
   return (
     <div className="profile-screen">
 
-      {/* Top bar */}
       <div className="profile-topbar">
         <h2>Account Settings</h2>
       </div>
 
-      {/* Profile info row */}
       <div className="profile-info-row">
         <div className="avatar-wrapper">
           {photo ? (
@@ -51,7 +49,6 @@ function ProfileScreen({ userData }) {
         </div>
       </div>
 
-      {/* Bio */}
       <div className="profile-bio-section">
         <p className="profile-bio">
           Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
@@ -60,7 +57,6 @@ function ProfileScreen({ userData }) {
         </p>
       </div>
 
-      {/* Empty body area with dashed border at bottom */}
       <div className="profile-body" />
 
     </div>

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SignupScreen.css';
 
-function SignupScreen({ onBack, onSignup }) {
+function SignupScreen({ onSignup }) {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -21,6 +23,7 @@ function SignupScreen({ onBack, onSignup }) {
       return;
     }
     onSignup({ name: form.name.trim(), email: form.email.trim() });
+    navigate('/profile');
   };
 
   return (
